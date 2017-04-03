@@ -25,12 +25,16 @@ SECRET_KEY = 'wk(6s!moseg4z+9l69z7^%e$m%xce=%-rq=(2a3hxvaaf_11e5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    u'djangotrail-dude036.c9users.io'
+    ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
