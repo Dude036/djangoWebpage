@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Django Test</title>{% endblock %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="side-column">
+      {% block sidebar %}
+      <ul class="sidebar-nav">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'polls' %}">Polls</a></li>
+      </ul>
+      {% endblock %}
+    </div>
+    <div class="main-column">
+    {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>
