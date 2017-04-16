@@ -6,6 +6,11 @@ For the entirety of the project, visit the site below.
 https://github.com/twbs/bootstrap
 */
 
+html {
+	background: url(background.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
 .sidebar-nav {
     margin-top: 20px;
     padding: 0;
@@ -14,22 +19,11 @@ https://github.com/twbs/bootstrap
 }
 
 .container {
+  padding-top: 20px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.container-fiuid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .main-column, .side-column {
@@ -37,15 +31,16 @@ https://github.com/twbs/bootstrap
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  float: right;
 }
 
 .side-column {
-  width: 16.66666667%;
+  width: 10%;
+  float: left;
 }
 
 .main-column {
-    width: 83.33333333%;
+    width: 85%;
+    float: right;
 }
 
 p {
